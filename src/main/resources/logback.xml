@@ -1,0 +1,18 @@
+<configuration>
+    <appender name="Console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss} | %level | %-40(%logger{0}:%line) | %msg%n</pattern>
+        </encoder>
+    </appender>
+    <appender name="File" class="ch.qos.logback.core.FileAppender">
+        <file>C:/Users/maria/IdeaProjects/ControlWorkAQA/Files/logs.log</file>
+        <append>false</append>
+        <encoder>
+            <pattern>%d{HH:mm:ss} | %level | %-40(%logger{0}:%line) | %msg%n</pattern>
+        </encoder>
+    </appender>
+    <root level="INFO">
+        <appender-ref ref="Console"/>
+        <appender-ref ref="File"/>
+    </root>
+</configuration>

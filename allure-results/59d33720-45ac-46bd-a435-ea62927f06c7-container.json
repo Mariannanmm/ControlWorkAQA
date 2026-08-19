@@ -1,0 +1,1 @@
+{"uuid":"59d33720-45ac-46bd-a435-ea62927f06c7","name":"ControlWorkAQA","children":["30cbdb77-2086-46c9-9d12-cd99f4456100"],"befores":[{"name":"config","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1786822548681,"stop":1786822548702}],"afters":[],"start":1786822548659,"stop":1786822555027}

@@ -1,0 +1,298 @@
+22:10:51 | INFO | SimpleReport:52                          | Report for config
++----------------------+---------+------------+------------+
+| Element              | Subject | Status     | ms.        |
++----------------------+---------+------------+------------+
++----------------------+---------+------------+------------+
+
+22:10:58 | INFO | WebDriverThreadLocalContainer:132        | No webdriver is bound to current thread: 1 - let's create a new webdriver
+22:11:00 | INFO | WebDriverFactory:119                     | Selenide 7.17.0 / Selenium 4.46.0 / chrome 151.0.7922.138 windows
+22:11:00 | WARN | BiDiUti:62                               | Failed to use BiDi to collect browser logs: org.openqa.selenium.bidi.BiDiException: Unable to create a BiDi connection
+Build info: version: '4.46.0', revision: 'df5a634 df5a6341cbb5f8f06b836bd595752775627c80dc'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.11'
+Driver info: BiDi Connection
+22:11:02 | INFO | SimpleReport:52                          | Report for createUserForLogin
++-------------------------------------------+--------------------------------------+------------+------------+
+| Element                                   | Subject                              | Status     | ms.        |
++-------------------------------------------+--------------------------------------+------------+------------+
+| open                                      | https://www.demoblaze.com/index.html | PASS       | 2864       |
+|   webdriver                               | create()                             | PASS       | 1983       |
+| #signin2                                  | click()                              | PASS       | 96         |
+| #sign-username                            | should be(visible)                   | PASS       | 295        |
+| #sign-username                            | append(marianna_cw_2026)             | PASS       | 37         |
+| #sign-password                            | append(Password123!)                 | PASS       | 35         |
+| By.xpath: //button[@onclick='register()'] | click()                              | PASS       | 53         |
++-------------------------------------------+--------------------------------------+------------+------------+
+
+22:11:02 | INFO | SimpleReport:52                          | Report for openSite
++----------------------+--------------------------------------+------------+------------+
+| Element              | Subject                              | Status     | ms.        |
++----------------------+--------------------------------------+------------+------------+
+| open                 | https://www.demoblaze.com/index.html | PASS       | 59         |
++----------------------+--------------------------------------+------------+------------+
+
+22:11:04 | INFO | SimpleReport:52                          | Report for addProductToCart
++--------------------------------------------------------------+---------------------+------------+------------+
+| Element                                                      | Subject             | Status     | ms.        |
++--------------------------------------------------------------+---------------------+------------+------------+
+| By.xpath: //a[@class='hrefch' and text()='Nokia lumia 1520'] | click()             | PASS       | 618        |
+| By.xpath: //a[contains(text(), 'Add to cart')]               | click()             | PASS       | 483        |
+| #cartur                                                      | click()             | PASS       | 394        |
+| By.xpath: //tr[@class='success']/td[2]                       | should be(size > 0) | PASS       | 666        |
++--------------------------------------------------------------+---------------------+------------+------------+
+
+22:11:04 | INFO | SimpleReport:52                          | Report for cleanWebDriver
++----------------------+---------+------------+------------+
+| Element              | Subject | Status     | ms.        |
++----------------------+---------+------------+------------+
+| clearCookies         |         | PASS       | 5          |
++----------------------+---------+------------+------------+
+
+22:11:04 | INFO | SimpleReport:52                          | Report for openSite
++----------------------+--------------------------------------+------------+------------+
+| Element              | Subject                              | Status     | ms.        |
++----------------------+--------------------------------------+------------+------------+
+| open                 | https://www.demoblaze.com/index.html | PASS       | 45         |
++----------------------+--------------------------------------+------------+------------+
+
+22:11:05 | INFO | SimpleReport:52                          | Report for checkHomeItemMatchesDetail
++---------------------------------------------------------------+--------------------+------------+------------+
+| Element                                                       | Subject            | Status     | ms.        |
++---------------------------------------------------------------+--------------------+------------+------------+
+| By.xpath: //h4[@class='card-title']                           | should be(size(9)) | PASS       | 219        |
+| By.xpath: //a[@class='hrefch' and text()='Samsung galaxy s6'] | click()            | PASS       | 248        |
+| By.xpath: //h2[@class='name']                                 | get text()         | PASS       | 233        |
+| By.xpath: //div[@id='more-information']/p                     | get text()         | PASS       | 12         |
+| By.xpath: //h3[@class='price-container']                      | get text()         | PASS       | 12         |
++---------------------------------------------------------------+--------------------+------------+------------+
+
+22:11:05 | INFO | SimpleReport:52                          | Report for cleanWebDriver
++----------------------+---------+------------+------------+
+| Element              | Subject | Status     | ms.        |
++----------------------+---------+------------+------------+
+| clearCookies         |         | PASS       | 8          |
++----------------------+---------+------------+------------+
+
+22:11:05 | INFO | SimpleReport:52                          | Report for openSite
++----------------------+--------------------------------------+------------+------------+
+| Element              | Subject                              | Status     | ms.        |
++----------------------+--------------------------------------+------------+------------+
+| open                 | https://www.demoblaze.com/index.html | PASS       | 44         |
++----------------------+--------------------------------------+------------+------------+
+
+22:11:07 | INFO | SimpleReport:52                          | Report for loginExistingUser
++----------------------------------------+--------------------------+------------+------------+
+| Element                                | Subject                  | Status     | ms.        |
++----------------------------------------+--------------------------+------------+------------+
+| #login2                                | click()                  | PASS       | 51         |
+| #loginusername                         | should be(visible)       | PASS       | 259        |
+| #loginusername                         | append(marianna_cw_2026) | PASS       | 32         |
+| #loginpassword                         | append(Password123!)     | PASS       | 34         |
+| By.xpath: //button[@onclick='logIn()'] | click()                  | PASS       | 41         |
+| #nameofuser                            | should be(visible)       | PASS       | 1077       |
+| #nameofuser                            | get text()               | PASS       | 18         |
++----------------------------------------+--------------------------+------------+------------+
+
+22:11:07 | INFO | SimpleReport:52                          | Report for cleanWebDriver
++----------------------+---------+------------+------------+
+| Element              | Subject | Status     | ms.        |
++----------------------+---------+------------+------------+
+| clearCookies         |         | PASS       | 8          |
++----------------------+---------+------------+------------+
+
+22:11:07 | INFO | SimpleReport:52                          | Report for openSite
++----------------------+--------------------------------------+------------+------------+
+| Element              | Subject                              | Status     | ms.        |
++----------------------+--------------------------------------+------------+------------+
+| open                 | https://www.demoblaze.com/index.html | PASS       | 37         |
++----------------------+--------------------------------------+------------+------------+
+
+22:11:08 | INFO | SimpleReport:52                          | Report for placeOrder
++-----------------------------------------------------------------------------+--------------------+------------+------------+
+| Element                                                                     | Subject            | Status     | ms.        |
++-----------------------------------------------------------------------------+--------------------+------------+------------+
+| By.xpath: //a[@class='hrefch' and text()='Nokia lumia 1520']                | click()            | PASS       | 278        |
+| By.xpath: //a[contains(text(), 'Add to cart')]                              | click()            | PASS       | 254        |
+| #cartur                                                                     | click()            | PASS       | 84         |
+| By.xpath: //button[@data-target='#orderModal']                              | click()            | PASS       | 44         |
+| #name                                                                       | append(Marianna)   | PASS       | 257        |
+| #country                                                                    | append(Ukraine)    | PASS       | 29         |
+| #city                                                                       | append(Dnipro)     | PASS       | 31         |
+| #card                                                                       | append(1234567890) | PASS       | 27         |
+| #month                                                                      | append(2)          | PASS       | 25         |
+| #year                                                                       | append(2026)       | PASS       | 25         |
+| By.xpath: //button[contains(text(), 'Purchase')]                            | click()            | PASS       | 48         |
+| By.xpath: //h2[contains(text(), 'Thank you')]                               | should be(visible) | PASS       | 11         |
+| By.xpath: //h2[contains(text(), 'Thank you')]                               | get text()         | PASS       | 12         |
+| By.xpath: //div[contains(@class,'sweet-alert')]//p[contains(@class,'lead')] | get text()         | PASS       | 15         |
++-----------------------------------------------------------------------------+--------------------+------------+------------+
+
+22:11:08 | INFO | SimpleReport:52                          | Report for cleanWebDriver
++----------------------+---------+------------+------------+
+| Element              | Subject | Status     | ms.        |
++----------------------+---------+------------+------------+
+| clearCookies         |         | PASS       | 4          |
++----------------------+---------+------------+------------+
+
+22:11:08 | INFO | SimpleReport:52                          | Report for openSite
++----------------------+--------------------------------------+------------+------------+
+| Element              | Subject                              | Status     | ms.        |
++----------------------+--------------------------------------+------------+------------+
+| open                 | https://www.demoblaze.com/index.html | PASS       | 51         |
++----------------------+--------------------------------------+------------+------------+
+
+22:11:09 | INFO | SimpleReport:52                          | Report for signUpNewUser
++-------------------------------------------+-------------------------------+------------+------------+
+| Element                                   | Subject                       | Status     | ms.        |
++-------------------------------------------+-------------------------------+------------+------------+
+| #signin2                                  | click()                       | PASS       | 45         |
+| #sign-username                            | should be(visible)            | PASS       | 241        |
+| #sign-username                            | append(marianna1787080268768) | PASS       | 29         |
+| #sign-password                            | append(Password123!)          | PASS       | 26         |
+| By.xpath: //button[@onclick='register()'] | click()                       | PASS       | 35         |
++-------------------------------------------+-------------------------------+------------+------------+
+
+22:11:10 | INFO | SimpleReport:52                          | Report for cleanWebDriver
++----------------------+---------+------------+------------+
+| Element              | Subject | Status     | ms.        |
++----------------------+---------+------------+------------+
+| clearCookies         |         | PASS       | 10         |
++----------------------+---------+------------+------------+
+
+22:11:11 | INFO | SimpleReport:52                          | Report for createUserForLogin
++-------------------------------------------+--------------------------------------+------------+------------+
+| Element                                   | Subject                              | Status     | ms.        |
++-------------------------------------------+--------------------------------------+------------+------------+
+| open                                      | https://www.demoblaze.com/index.html | PASS       | 221        |
+| #signin2                                  | click()                              | PASS       | 50         |
+| #sign-username                            | should be(visible)                   | PASS       | 259        |
+| #sign-username                            | append(marianna_cw_2026)             | PASS       | 27         |
+| #sign-password                            | append(Password123!)                 | PASS       | 27         |
+| By.xpath: //button[@onclick='register()'] | click()                              | PASS       | 36         |
++-------------------------------------------+--------------------------------------+------------+------------+
+
+22:11:11 | INFO | SimpleReport:52                          | Report for openSite
++----------------------+--------------------------------------+------------+------------+
+| Element              | Subject                              | Status     | ms.        |
++----------------------+--------------------------------------+------------+------------+
+| open                 | https://www.demoblaze.com/index.html | PASS       | 31         |
++----------------------+--------------------------------------+------------+------------+
+
+22:11:11 | INFO | SimpleReport:52                          | Report for loginWithNonexistentUser
++----------------------------------------+-----------------------------+------------+------------+
+| Element                                | Subject                     | Status     | ms.        |
++----------------------------------------+-----------------------------+------------+------------+
+| #login2                                | click()                     | PASS       | 48         |
+| #loginusername                         | should be(visible)          | PASS       | 246        |
+| #loginusername                         | append(nouser1787080271141) | PASS       | 35         |
+| #loginpassword                         | append(Password123!)        | PASS       | 31         |
+| By.xpath: //button[@onclick='logIn()'] | click()                     | PASS       | 35         |
++----------------------------------------+-----------------------------+------------+------------+
+
+22:11:11 | INFO | SimpleReport:52                          | Report for cleanWebDriver
++----------------------+---------+------------+------------+
+| Element              | Subject | Status     | ms.        |
++----------------------+---------+------------+------------+
+| clearCookies         |         | PASS       | 8          |
++----------------------+---------+------------+------------+
+
+22:11:11 | INFO | SimpleReport:52                          | Report for openSite
++----------------------+--------------------------------------+------------+------------+
+| Element              | Subject                              | Status     | ms.        |
++----------------------+--------------------------------------+------------+------------+
+| open                 | https://www.demoblaze.com/index.html | PASS       | 36         |
++----------------------+--------------------------------------+------------+------------+
+
+22:11:12 | INFO | SimpleReport:52                          | Report for loginWithWrongPassword
++----------------------------------------+--------------------------+------------+------------+
+| Element                                | Subject                  | Status     | ms.        |
++----------------------------------------+--------------------------+------------+------------+
+| #login2                                | click()                  | PASS       | 94         |
+| #loginusername                         | should be(visible)       | PASS       | 260        |
+| #loginusername                         | append(marianna_cw_2026) | PASS       | 43         |
+| #loginpassword                         | append(wrongPassword123) | PASS       | 29         |
+| By.xpath: //button[@onclick='logIn()'] | click()                  | PASS       | 39         |
++----------------------------------------+--------------------------+------------+------------+
+
+22:11:12 | INFO | SimpleReport:52                          | Report for cleanWebDriver
++----------------------+---------+------------+------------+
+| Element              | Subject | Status     | ms.        |
++----------------------+---------+------------+------------+
+| clearCookies         |         | PASS       | 6          |
++----------------------+---------+------------+------------+
+
+22:11:12 | INFO | SimpleReport:52                          | Report for openSite
++----------------------+--------------------------------------+------------+------------+
+| Element              | Subject                              | Status     | ms.        |
++----------------------+--------------------------------------+------------+------------+
+| open                 | https://www.demoblaze.com/index.html | PASS       | 59         |
++----------------------+--------------------------------------+------------+------------+
+
+22:11:15 | INFO | SimpleReport:52                          | Report for placeOrderWithoutCredentials
++--------------------------------------------------------------+---------+------------+------------+
+| Element                                                      | Subject | Status     | ms.        |
++--------------------------------------------------------------+---------+------------+------------+
+| By.xpath: //a[@class='hrefch' and text()='Nokia lumia 1520'] | click() | PASS       | 827        |
+| By.xpath: //a[contains(text(), 'Add to cart')]               | click() | PASS       | 493        |
+| #cartur                                                      | click() | PASS       | 388        |
+| By.xpath: //button[@data-target='#orderModal']               | click() | PASS       | 63         |
+| By.xpath: //button[contains(text(), 'Purchase')]             | click() | PASS       | 288        |
++--------------------------------------------------------------+---------+------------+------------+
+
+22:11:15 | INFO | SimpleReport:52                          | Report for cleanWebDriver
++----------------------+---------+------------+------------+
+| Element              | Subject | Status     | ms.        |
++----------------------+---------+------------+------------+
+| clearCookies         |         | PASS       | 5          |
++----------------------+---------+------------+------------+
+
+22:11:15 | INFO | SimpleReport:52                          | Report for openSite
++----------------------+--------------------------------------+------------+------------+
+| Element              | Subject                              | Status     | ms.        |
++----------------------+--------------------------------------+------------+------------+
+| open                 | https://www.demoblaze.com/index.html | PASS       | 38         |
++----------------------+--------------------------------------+------------+------------+
+
+22:11:18 | INFO | SimpleReport:52                          | Report for removeProductFromCart
++--------------------------------------------------------------+---------------------+------------+------------+
+| Element                                                      | Subject             | Status     | ms.        |
++--------------------------------------------------------------+---------------------+------------+------------+
+| By.xpath: //a[@class='hrefch' and text()='Nokia lumia 1520'] | click()             | PASS       | 297        |
+| By.xpath: //a[contains(text(), 'Add to cart')]               | click()             | PASS       | 261        |
+| #cartur                                                      | click()             | PASS       | 68         |
+| By.xpath: //tr[@class='success']/td[2]                       | should be(size > 0) | PASS       | 660        |
+| By.xpath: //a[text()='Delete']                               | click()             | PASS       | 40         |
+| By.xpath: //tr[@class='success']/td[2]                       | should be(size(0))  | PASS       | 649        |
++--------------------------------------------------------------+---------------------+------------+------------+
+
+22:11:18 | INFO | SimpleReport:52                          | Report for cleanWebDriver
++----------------------+---------+------------+------------+
+| Element              | Subject | Status     | ms.        |
++----------------------+---------+------------+------------+
+| clearCookies         |         | PASS       | 5          |
++----------------------+---------+------------+------------+
+
+22:11:18 | INFO | SimpleReport:52                          | Report for openSite
++----------------------+--------------------------------------+------------+------------+
+| Element              | Subject                              | Status     | ms.        |
++----------------------+--------------------------------------+------------+------------+
+| open                 | https://www.demoblaze.com/index.html | PASS       | 202        |
++----------------------+--------------------------------------+------------+------------+
+
+22:11:19 | INFO | SimpleReport:52                          | Report for signUpExistingUser
++-------------------------------------------+--------------------------+------------+------------+
+| Element                                   | Subject                  | Status     | ms.        |
++-------------------------------------------+--------------------------+------------+------------+
+| #signin2                                  | click()                  | PASS       | 46         |
+| #sign-username                            | should be(visible)       | PASS       | 253        |
+| #sign-username                            | append(marianna_cw_2026) | PASS       | 31         |
+| #sign-password                            | append(Password123!)     | PASS       | 32         |
+| By.xpath: //button[@onclick='register()'] | click()                  | PASS       | 40         |
++-------------------------------------------+--------------------------+------------+------------+
+
+22:11:19 | INFO | SimpleReport:52                          | Report for cleanWebDriver
++----------------------+---------+------------+------------+
+| Element              | Subject | Status     | ms.        |
++----------------------+---------+------------+------------+
+| clearCookies         |         | PASS       | 5          |
++----------------------+---------+------------+------------+
+
